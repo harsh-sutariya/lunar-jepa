@@ -11,6 +11,10 @@ This repository contains the implementation of a Joint Embedding Predictive Arch
 - `train_localization_prober.py`: Training script for the localization prober
 - `test_localization_prober.py`: Testing script for the localization prober
 
+## Recurrent JEPA Model Architecture
+![lunar-jepa drawio](https://github.com/user-attachments/assets/baa77564-0a4b-4424-8782-f7c35b5e4b4e)
+
+
 ## Getting Started
 
 ### Prerequisites
@@ -43,12 +47,13 @@ python test_localization_prober.py
 
 ## Training Logs
 
-For detailed training logs and experiment results, please refer to the document below:
-[Training Logs Documentation](https://docs.google.com/document/d/1QlIEBaKg2ZQEliG3myqIagBazQqnCXuJjNhN7d0odr4/edit?usp=sharing)
+For detailed training logs and experiment results of the JEPA model, please refer to the image below:
+![image](https://github.com/user-attachments/assets/1a2e94ef-30f7-4c72-abfa-6f851cde71cc)
+
 
 ## Dataset
 
-The repository uses IMU data stored in `data.csv` (64MB). Make sure this file is present in the root directory before starting the training process.
+The repository uses IMU, Pose and Velocity data obtained from Carla simulator's Lunar environment. The data is stored in `data.csv` (64MB). Make sure this file is present in the root directory before starting the training process. This data is then divided into trajectories, for more information follow `data_structure.py`.
 
 ## References
 
